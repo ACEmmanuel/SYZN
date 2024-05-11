@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+
+    h1{
+        @apply font-rale text-3xl lg:text-6xl font-medium;
+    }
+    
+    h2{
+        @apply font-rale text-[2rem] sm:text-4xl font-[600] mt-4;
+    }
+
+    h4{
+        @apply font-[700] text-[#2CBCA5] text-[15px] font-inter tracking-[1px];
+    }
+
+    h5{
+        @apply text-[16px] md:text-[18px] text-balance text-white/70 font-DM;
+    }
+
+    p{
+        @apply text-[16px] lg:text-[18px];
+    }
+}
+
+
+@layer components{
+    .btn{
+        @apply w-[9rem] h-[2.5rem] rounded-full cursor-pointer text-nowrap text-center grid place-content-center font-rale bg-[#2CBCA5] text-[#08071B] font-medium;
+    }
+
+    .base-head{
+        @apply text-5xl font-bold;
+    }
+
+    .base-body{
+        @apply text-[16px] text-white/80;
+    }
+
+    .base{
+        @apply font-DM bg-[#1A1C2C] w-full mx-auto p-7 rounded-[1.3rem] flex flex-col items-center;
+    }
+
+    .img{
+        @apply w-[2rem] aspect-square; 
+    }
+
+    .bttn{
+        @apply px-[4rem] py-[1.2rem] rounded-full cursor-pointer text-nowrap text-center grid place-content-center font-rale bg-purple-700 hover:bg-purple-800;
+    }
+
+    .input{
+        @apply rounded-full w-[90%] lg:w-full max-w-[30rem] h-[3.3rem] outline-none text-black pl-3;
+    }
+
+    .search{
+        @apply absolute h-full top-0 right-0 rounded-full text-white bg-[#2CBCA5] w-[11rem] sm:w-[10rem] px-[3rem] py-[1rem] overflow-clip;
+    }
+
+    .modal{
+        @apply container mx-auto absolute overflow-hidden w-full left-0 top-0 h-[100vh] bg-[#17171f] text-lg grid place-content-center;
+    }
+
+    .head{
+        @apply hover:text-[#2CBCA5] cursor-pointer hover:font-bold;
+    }
+}
